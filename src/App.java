@@ -18,19 +18,32 @@ public class App {
     public static void main(String[] args) {
 
         // TODO: Update this with your CSV file path
-        File file = new File("data/your_dataset.csv");
-
+        File file = new File("pokemon(1).csv");
+        Scanner scanner = new Scanner(file);
         // TODO: Create an array of Data objects to store data
-
-
-        // TODO: Read file using Scanner
+            Data[] dataList = new Data[151];
+            int index = 0; 
+        scanner.nextLine(); // Skip header
+         // TODO: Read file using Scanner
         // - Skip header if needed
         // - Loop through rows
         // - Split each line by commas
         // - Convert text to numbers when needed
         // - Create new Data objects
         // - Add to your array
-
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            String[] columns = line.split(",");
+            String name = columns[1];
+            String type1 = columns[2];
+            int hp = Integer.parseInt(columns[5]);
+            int attack = Integer.parseInt(columns[6]);
+            int defense = Integer.parseInt(columns[7]);
+            int speed = Integer.parseInt(columns[10]);
+            dataList[index] = new Data(name, type1, hp, attack, defense, speed);
+            index++;
+        }
+       scanner.close();
 
         // TODO: Call your analysis methods
         // Example:
@@ -44,9 +57,6 @@ public class App {
         // - Final answer to your guiding question
 
 
-        // OPTIONAL TODO:
-        // Add user interaction:
-        // Ask the user what kind of analysis they want to see
     }
 
 
