@@ -94,5 +94,5 @@ public class Data {
                 ", defense=" + defense +
                 ", speed=" + speed +
                 '}';    
-
+    }
 }
