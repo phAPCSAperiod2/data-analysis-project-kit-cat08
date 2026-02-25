@@ -3,24 +3,17 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Main application for the Data Analysis Mini‑Project.
- *
- * TODO:
- *  - Update the path to your dataset file
- *  - Read the CSV file using Scanner
- *  - Parse each row and extract the correct columns
- *  - Construct Data objects from each row
- *  - Store them in an array
- *  - Write methods to analyze the dataset (min, max, average, filters, etc.)
- *  - Print insights and answer your guiding question
- *  - Add Javadoc comments for any methods you create
+ * This is the main class of my project that scans a CSV file of Pokémon data, creates Data objects, and calls analysis methods to find insights about the Pokémon.
+ * @author Cathy Vo
+ * @version 2/25/2026
  */
+
 public class App {
 
     public static void main(String[] args) throws IOException {
 
         // TODO: Update this with your CSV file path
-        File file = new File("pokemon(1).csv");
+        File file = new File("data/pokemon (1).csv");
         Scanner scanner = new Scanner(file);
         // TODO: Create an array of Data objects to store data
             Data[] dataList = new Data[151];
@@ -38,10 +31,10 @@ public class App {
             String[] columns = line.split(",");
             String name = columns[1];
             String type1 = columns[2];
-            int hp = Integer.parseInt(columns[5]);
-            int attack = Integer.parseInt(columns[6]);
-            int defense = Integer.parseInt(columns[7]);
-            int speed = Integer.parseInt(columns[8]);
+            int hp = Integer.parseInt(columns[4]);
+            int attack = Integer.parseInt(columns[5]);
+            int defense = Integer.parseInt(columns[6]);
+            int speed = Integer.parseInt(columns[7]);
             dataList[index] = new Data(name, type1, hp, attack, defense, speed);
             index++;
         }
@@ -51,10 +44,9 @@ public class App {
         // Example:
         // double maxValue = findMaxValue(dataList);
         // double average = computeAverageValue(dataList);
-        for (Data pokemon : dataList) {
-            System.out.println(Data.getStrongestStat(pokemon));
-        }
-        System.out.println("HI");
+        System.out.println(Data.getStrongestStat(dataList));
+        System.out.println(Data.lowestHP(dataList));
+        System.out.println(Data.fastestPokemon(dataList));  
         // TODO: Print insights
         // - Number of rows loaded
         // - Min, max, average, or any other findings
