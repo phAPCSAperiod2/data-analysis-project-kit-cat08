@@ -56,7 +56,7 @@ public class Data {
     public int getAverageStats() {
         return (hp + attack + defense + speed) / 4;
     }
-    public String getStrongestStat(Data pokemon) {
+    public static String getStrongestStat(Data pokemon) {
         int highestStats =0;
         String strongest = "";
         if (pokemon.getAverageStats() > highestStats) {
@@ -65,7 +65,7 @@ public class Data {
         }
         return "The strongest Pokémon is: " + strongest + " with an average stat of: " + highestStats;
     }
-    public String lowestHP (Data pokemon) {
+    public static String lowestHP (Data pokemon) {
         int lowestHP = Integer.MAX_VALUE;
         String weakest = "";
         if (pokemon.getHp() < lowestHP) {
@@ -74,7 +74,7 @@ public class Data {
         }
         return "The Pokémon with the lowest HP is: " + weakest + " with an HP of: " + lowestHP;
     }
-    public String fastestPokemon (Data pokemon) {
+    public static String fastestPokemon (Data pokemon) {
         int fastest = 0;
         String fastestPokemon = "";
         if (pokemon.getSpeed() > fastest) {
@@ -86,7 +86,7 @@ public class Data {
     // TODO: Override toString() to return a readable representation of your object
     @Override
     public String toString() {
-        return "Data{" +
+        return "Pokemon{" +
                 "name='" + name + '\'' +
                 ", type1='" + type1 + '\'' +
                 ", hp=" + hp +

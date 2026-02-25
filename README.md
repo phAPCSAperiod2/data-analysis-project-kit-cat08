@@ -70,7 +70,7 @@ UML_Diagram.png (or UML_Diagram.pdf)
 **Source / Link:**  
 
 **What this dataset contains (2–3 sentences):**  
-____________________________________________________________________  
+__This data set contain information about pokemon. We will be using the pokemon's name and type. We will also be using hp, defense, attack, and speed._______________  
 ____________________________________________________________________  
 
 ---
@@ -80,7 +80,7 @@ ____________________________________________________________________
 Your guiding question should be something you can answer using your dataset.
 
 **My guiding question:**  
-____________________________________________________________________  
+__Which pokemon is the strongest?___________________________________  
 ____________________________________________________________________  
 
 Examples:

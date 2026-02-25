@@ -1,4 +1,6 @@
 import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Main application for the Data Analysis Mini‑Project.
@@ -15,7 +17,7 @@ import java.io.File;
  */
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // TODO: Update this with your CSV file path
         File file = new File("pokemon(1).csv");
@@ -39,7 +41,7 @@ public class App {
             int hp = Integer.parseInt(columns[5]);
             int attack = Integer.parseInt(columns[6]);
             int defense = Integer.parseInt(columns[7]);
-            int speed = Integer.parseInt(columns[10]);
+            int speed = Integer.parseInt(columns[8]);
             dataList[index] = new Data(name, type1, hp, attack, defense, speed);
             index++;
         }
@@ -49,12 +51,15 @@ public class App {
         // Example:
         // double maxValue = findMaxValue(dataList);
         // double average = computeAverageValue(dataList);
-
-
+        for (Data pokemon : dataList) {
+            System.out.println(Data.getStrongestStat(pokemon));
+        }
+        System.out.println("HI");
         // TODO: Print insights
         // - Number of rows loaded
         // - Min, max, average, or any other findings
         // - Final answer to your guiding question
+       
 
 
     }
