@@ -105,7 +105,7 @@ You must create a class that represents **one row** of your dataset.
 
 ### ✏ Include your class diagram
 
-
+- https://drive.google.com/file/d/1mh-4DG9Izu0ZISoxzcMD_4CWzyHqggYH/view?usp=sharing
 ---
 
 ## 📥 Step 4 — Read Your CSV File Using Scanner
@@ -126,10 +126,12 @@ In `Main.java`, you must:
 
 | Attribute Name | CSV Column Name | Column Index # | Notes |
 |----------------|------------------|----------------|-------|
-|                |                  |                |       |
-|                |                  |                |       |
-|                |                  |                |       |
-
+|  name          |    Pokemon       |     1          | String |
+|  type1         |    Type 1        |     2          | String     |
+|  HP            |    HP            |     4          |  int     |
+|  attack        |    Attack        |     5          |  int     |
+|  defense       |    Defense       |     6          |  int    |
+|  speeed        |    Speed         |     7          |  int     |
 ---
 
 ## 📊 Step 5 — Analyze Your Data
@@ -145,9 +147,9 @@ You must write **at least two algorithms** to analyze your dataset.
 
 **Algorithms I will implement:**
 
-1. _Minimum value of attribute _______  
-2. _Maximum value of attribute ______  
-3. _ Average of attribute______________
+1. Minimum value of attribute   
+2. Maximum value of attribute 
+3. Average of attribute
 
 Optional extras:  
 - Sorting  
@@ -216,10 +218,7 @@ Write a short reflection (3–5 sentences):
 - How trustworthy are your insights?
 
 **My reflection:**  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
+My data could be biased because it doens't include every single pokemon from all the generations, only generation 1. This may make the results on my data incorrect because another pokemon could be have a higher average stats and be stronger. I think insights are trustworthy if the user is only interested in generation 1 pokemons.
 
 ---
 
