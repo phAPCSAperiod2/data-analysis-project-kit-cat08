@@ -137,16 +137,17 @@ In `Main.java`, you must:
 You must write **at least two algorithms** to analyze your dataset.
 
 ### Required: Choose 2 or more algorithms
-- [ ] Minimum value of attribute  
-- [ ] Maximum value of attribute  
-- [ ] Average of attribute  
+- [X] Minimum value of attribute  
+- [X] Maximum value of attribute  
+- [X] Average of attribute  
 - [ ] Filter by category  
 - [ ] Count items matching a condition  
 
 **Algorithms I will implement:**
 
-1. __________________________________________  
-2. __________________________________________  
+1. _Minimum value of attribute _______  
+2. _Maximum value of attribute ______  
+3. _ Average of attribute______________
 
 Optional extras:  
 - Sorting  
@@ -165,13 +166,10 @@ After analyzing your objects, print:
 - ✔ A clear answer to your guiding question  
 
 **My findings:**  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
+There were 151 rows on information of pokemonn loaded into the dataset. Mewtwo was the strongest pokemon with the highest average total of HP, speed, defensive, and attack points. Diglett is the pokemon with the lowest HP. Electrode is the fastest pokemon. 
 
 **My answer to the guiding question:**  
-____________________________________________________________________  
-____________________________________________________________________  
+Mewtwo was the strongest pokemon with the highest average total of HP, speed, defensive, and attack points.
 
 ---
 

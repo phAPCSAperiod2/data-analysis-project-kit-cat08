@@ -83,8 +83,8 @@ public class Data {
      * Method to calculate the average of the Pokémon's stats (HP, attack, defense, speed).
      * @return The average of the Pokémon's stats.
     */
-    public int getAverageStats() {
-        return (hp + attack + defense + speed) / 4;
+    public double getAverageStats() {
+        return (double) (hp + attack + defense + speed) / 4;
     }
     /**
      * Static method to find the Pokémon with the highest average stats from an array of Data objects.
@@ -92,7 +92,7 @@ public class Data {
      * @return A string describing the strongest Pokémon and its average stat value.
     */
     public static String getStrongestStat(Data[] pokemon) {
-        int highestStats =0;
+        double highestStats =0;
         String strongest = "";
         for (Data p : pokemon) {
             if (p.getAverageStats() > highestStats) {
@@ -100,7 +100,7 @@ public class Data {
                 strongest = p.getName();
             }
         }
-        return "The strongest Pokémon is: " + strongest + " with an average stat of: " + highestStats;
+        return "The strongest Pokémon is " + strongest + " with an average stat of " + highestStats;
     }
     /**
      * Static method to find the Pokémon with the lowest HP from an array of Data objects.
@@ -116,7 +116,7 @@ public class Data {
                 weakest = p.getName();
             }
         }
-        return "The Pokémon with the lowest HP is: " + weakest + " with an HP of: " + lowestHP;
+        return "The Pokémon with the lowest HP is " + weakest + " with an HP of " + lowestHP;
     }
     /**
      *  Static method to find the fastest Pokémon from an array of Data objects.
@@ -132,7 +132,7 @@ public class Data {
                 fastestPokemon = p.getName();
             }
         }
-        return "The fastest Pokémon is: " + fastestPokemon + " with a speed of: " + fastest;
+        return "The fastest Pokémon is " + fastestPokemon + " with a speed of " + fastest;
     }
     // TODO: Override toString() to return a readable representation of your object
     /**

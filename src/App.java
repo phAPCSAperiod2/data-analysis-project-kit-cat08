@@ -44,13 +44,15 @@ public class App {
         // Example:
         // double maxValue = findMaxValue(dataList);
         // double average = computeAverageValue(dataList);
-        System.out.println(Data.getStrongestStat(dataList));
-        System.out.println(Data.lowestHP(dataList));
-        System.out.println(Data.fastestPokemon(dataList));  
+
         // TODO: Print insights
         // - Number of rows loaded
         // - Min, max, average, or any other findings
         // - Final answer to your guiding question
+        System.out.println(Data.getStrongestStat(dataList));
+        System.out.println(Data.lowestHP(dataList));
+        System.out.println(Data.fastestPokemon(dataList));  
+      
        
 
 
